@@ -5,5 +5,9 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
-   
+    <div class="container home-categories homepage">
+        <div class="row home-main-categories no-gutters featured-products-list">
+            <isslot id="featured-products" description="Featured products on the home page." context="global" />
+        </div>
+    </div>
 </isdecorate>
