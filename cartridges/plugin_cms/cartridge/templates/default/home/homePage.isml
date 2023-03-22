@@ -5,8 +5,15 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
-    <div class="container home-categories homepage">
-        <div class="row home-main-categories no-gutters featured-products-list">
+    <div class="container categories-list-home">
+        <h2 class="categories-list-title">
+            ${Resource.msg('slot.category.list', 'homePage', null)}
+        </h2>
+        <isslot id="cat-landing-slotbanner-m" description="Featured products on the home page." context="global" />
+    </div>
+
+    <div class="container homepage mt-5">
+        <div class="row featured-products-list">
             <h2 class="featured-products-title">
                 ${Resource.msg('slot.featured.products', 'homePage', null)}
             </h2>
