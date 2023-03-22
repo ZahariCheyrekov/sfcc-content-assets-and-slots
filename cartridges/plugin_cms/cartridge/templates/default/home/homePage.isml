@@ -7,7 +7,12 @@
 
     <div class="container home-categories homepage">
         <div class="row home-main-categories no-gutters featured-products-list">
+            <h2 class="featured-products-title">
+                ${Resource.msg('slot.featured.products', 'homePage', null)}
+            </h2>
             <isslot id="featured-products" description="Featured products on the home page." context="global" />
+
         </div>
     </div>
+
 </isdecorate>
