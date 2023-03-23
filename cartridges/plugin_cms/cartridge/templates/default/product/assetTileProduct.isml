@@ -1,0 +1,11 @@
+<h2 class="exclusive-products-title mt-5">
+    ${Resource.msg('exclusive.products.title', 'productTile', null)}
+</h2>
+<div class="row">
+    <isloop items="${pdict.assetBody}" var="productId">
+        <div class="col-sm-6 col-md-4">
+            <isinclude
+                url="${URLUtils.url('Tile-Show', 'pid', productId, 'pview', 'tile', 'ratings', false, 'swatches', false)}" />
+        </div>
+    </isloop>
+</div>
