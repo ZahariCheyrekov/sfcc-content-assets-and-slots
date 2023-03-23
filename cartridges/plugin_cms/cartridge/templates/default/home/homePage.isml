@@ -5,11 +5,18 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
-    <div class="container categories-list-home">
+    <div class="container hero-slider-container">
+        <h2 class="hero-slider-title">
+            ${Resource.msg('slot.hero.slider', 'homePage', null)}
+        </h2>
+        <isslot id="hero-slider" description="Slider with the home page content assets." context="global" />
+    </div>
+
+    <div class="container categories-list-home mt-5">
         <h2 class="categories-list-title">
             ${Resource.msg('slot.category.list', 'homePage', null)}
         </h2>
-        <isslot id="cat-landing-slotbanner-m" description="Featured products on the home page." context="global" />
+        <isslot id="cat-landing-slotbanner-m" description="List of the site categories." context="global" />
     </div>
 
     <div class="container homepage mt-5">
