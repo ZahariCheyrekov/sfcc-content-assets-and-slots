@@ -1,0 +1,32 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+        assets.addCss('/css/homePage.css');
+    </isscript>
+
+    <div class="container hero-slider-container">
+        <h2 class="hero-slider-title">
+            ${Resource.msg('slot.hero.slider', 'homePage', null)}
+        </h2>
+        <isslot id="hero-slider" description="Slider with the home page content assets." context="global" />
+    </div>
+
+    <div class="container categories-list-home mt-5">
+        <h2 class="categories-list-title">
+            ${Resource.msg('slot.category.list', 'homePage', null)}
+        </h2>
+        <isslot id="cat-landing-slotbanner-m" description="List of the site categories." context="global" />
+    </div>
+
+    <div class="container homepage mt-5">
+        <div class="row featured-products-list">
+            <h2 class="featured-products-title">
+                ${Resource.msg('slot.featured.products', 'homePage', null)}
+            </h2>
+            <isslot id="featured-products" description="Featured products on the home page." context="global" />
+
+        </div>
+    </div>
+
+</isdecorate>
