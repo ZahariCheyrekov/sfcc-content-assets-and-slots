@@ -1,4 +1,7 @@
 <isif condition="${slotcontent != null}">
+    <h2 class="category-list-assets">
+        ${Resource.msg('section.category.list.assets', 'categoryLandingPage', null)}
+    </h2>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
