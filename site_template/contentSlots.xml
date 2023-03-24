@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slot-configurations xmlns="http://www.demandware.com/xml/impex/slot/2008-09-08">
+    <slot-configuration slot-id="hero-slider" context="global" configuration-id="hero-slider" assigned-to-site="true">
+        <template>slots/content/sliderAssetBody.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="home-main"/>
+                <content-asset content-id="home-main"/>
+                <content-asset content-id="home-main"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="global" configuration-id="cat-landing-registered" assigned-to-site="true">
+        <template>slots/category/categoryTileWithDescription.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+                <category category-id="newarrivals-mens"/>
+                <category category-id="newarrivals-electronics"/>
+            </categories>
+        </content>
+        <customer-groups>
+            <customer-group group-id="Registered"/>
+        </customer-groups>
+    </slot-configuration>
+
+   <slot-configuration slot-id="cat-landing-slotbanner-m" context="global" configuration-id="cat-landing-unregistered" assigned-to-site="true">
+        <template>slots/category/categoryTileWithDescription.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+                <category category-id="newarrivals-mens"/>
+            </categories>
+        </content>
+        <customer-groups>
+            <customer-group group-id="Unregistered"/>
+        </customer-groups>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="electronics" configuration-id="electronics-subcategories" default="true" assigned-to-site="true">
+        <description>Subcategory tiles for electronics.</description>
+        <template>slots/category/categoryTile.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="electronics-televisions"/>
+                <category category-id="electronics-digital-cameras"/>
+                <category category-id="electronics-digital-media-players"/>
+                <category category-id="electronics-gps-units"/>
+                <category category-id="electronics-gaming"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="newarrivals" configuration-id="newarrivals-subcategories-guest" default="true" assigned-to-site="true">
+        <template>slots/category/categoryTile.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+                <category category-id="newarrivals-mens"/>
+                <category category-id="newarrivals-mens"/>
+            </categories>
+        </content>
+        <customer-groups>
+            <customer-group group-id="Unregistered"/>
+        </customer-groups>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="newarrivals" configuration-id="newarrivals-subcategories-registered" assigned-to-site="true">
+        <description>Default slot to link to sub-categories under new arrivals</description>
+        <template>slots/category/categoryTile.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+                <category category-id="newarrivals-mens"/>
+                <category category-id="newarrivals-electronics"/>
+            </categories>
+        </content>
+        <customer-groups>
+            <customer-group group-id="Registered"/>
+        </customer-groups>
+    </slot-configuration>
+
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="womens" configuration-id="womens" default="true" assigned-to-site="true">
+        <description>Default banner for womens category landing page</description>
+        <template>slots/category/catLandingBanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="womens" configuration-id="womens-abtest" assigned-to-site="false">
+        <description>AB Test slot for womens-landing slot</description>
+        <template>slots/content/htmlSlotContainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;img alt="Image for Womens Category" src="images/slot/landing/cat-landing-slotbanner-womens-abtest.jpg?$staticlink$" title="" /&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner-m" context="category" context-id="mens" configuration-id="mens" assigned-to-site="true">
+        <description>Default banner for mens category landing page</description>
+        <template>slots/category/catLandingBanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="featured-products" context="global" configuration-id="featured-products" assigned-to-site="true">
+        <template>slots/product/homePageProductSlot.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <products>
+                <product product-id="25686364M"/>
+                <product product-id="25752218M"/>
+                <product product-id="25565826M"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="category-landing-slider" context="category" context-id="electronics" configuration-id="category-landing-slider-electronics" assigned-to-site="true">
+        <template>rendering/category/catLandingSlider.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="cat-landing-electronics"/>
+                <content-asset content-id="cat-landing-electronics"/>
+                <content-asset content-id="cat-landing-electronics"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="category-landing-slider" context="category" context-id="mens" configuration-id="category-landing-slider-mens" assigned-to-site="true">
+        <template>rendering/category/catLandingSlider.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="cat-landing-mens"/>
+                <content-asset content-id="cat-landing-mens"/>
+                <content-asset content-id="cat-landing-mens"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="category-landing-slider" context="category" context-id="newarrivals" configuration-id="category-landing-slider-new-arrivals" assigned-to-site="true">
+        <template>rendering/category/catLandingSlider.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="cat-landing-new-arrivals"/>
+                <content-asset content-id="cat-landing-new-arrivals"/>
+                <content-asset content-id="cat-landing-new-arrivals"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="category-landing-slider" context="category" context-id="womens" configuration-id="category-landing-slider-women" assigned-to-site="true">
+        <template>rendering/category/catLandingSlider.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="cat-landing-womens"/>
+                <content-asset content-id="cat-landing-womens"/>
+                <content-asset content-id="cat-landing-womens"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+</slot-configurations>
